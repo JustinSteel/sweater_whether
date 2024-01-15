@@ -1,0 +1,268 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.yelp.com/v3/businesses/search?location=denver,co&term=mexican
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer SG3cNKDCOzB0jwTHCjXvY7HQaZ9PeS3iy88jfrHPWoc54snvAfCY-3M8IVkTjEYvhsWf-y7zeL-9CMHowp7yGomBbXgsCcHt57-S_5gmS5aTDhmjtObjDFBcpdekZXYx
+      User-Agent:
+      - Faraday v2.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      X-Zipkin-Id:
+      - 266196da3cb24e8d
+      X-Routing-Service:
+      - routing-main--useast1-74f644dc4b-gtk45; site=public_api_v3
+      Ratelimit-Dailylimit:
+      - '500.0'
+      Ratelimit-Remaining:
+      - '447.0'
+      X-B3-Sampled:
+      - '0'
+      Ratelimit-Resettime:
+      - '2024-01-16T00:00:00+00:00'
+      Server:
+      - envoy
+      X-Mode:
+      - ro
+      X-Proxied:
+      - 10-65-166-92-useast1bprod
+      X-Extlb:
+      - 10-65-166-92-useast1bprod
+      Cache-Control:
+      - max-age=0, no-store, private, no-transform
+      Accept-Ranges:
+      - bytes
+      Date:
+      - Mon, 15 Jan 2024 18:28:58 GMT
+      Via:
+      - 1.1 varnish
+      X-Served-By:
+      - cache-dfw-kdal2120078-DFW
+      X-Cache:
+      - MISS
+      X-Cache-Hits:
+      - '0'
+      Vary:
+      - Accept-Encoding
+      Alt-Svc:
+      - h3=":443";ma=86400,h3-29=":443";ma=86400,h3-27=":443";ma=86400
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: '{"businesses": [{"id": "YDgsb390pfWXEM5wLb_OvA", "alias": "mariscos-el-charco-denver",
+        "name": "Mariscos El Charco", "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/wYLPVIO-YlXJjTqbKB_HXw/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/mariscos-el-charco-denver?adjust_creative=brR3_xcVublpFQ4Am1iO_g&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=brR3_xcVublpFQ4Am1iO_g",
+        "review_count": 2, "categories": [{"alias": "mexican", "title": "Mexican"},
+        {"alias": "seafood", "title": "Seafood"}, {"alias": "cocktailbars", "title":
+        "Cocktail Bars"}], "rating": 5.0, "coordinates": {"latitude": 39.70836558104332,
+        "longitude": -104.9301141}, "transactions": ["restaurant_reservation"], "location":
+        {"address1": "4978 Leetsdale Dr", "address2": "", "address3": null, "city":
+        "Denver", "zip_code": "80246", "country": "US", "state": "CO", "display_address":
+        ["4978 Leetsdale Dr", "Denver, CO 80246"]}, "phone": "+13034848552", "display_phone":
+        "(303) 484-8552", "distance": 4571.678529691329}, {"id": "fbb7fsCGVMVkavIMm7_8KQ",
+        "alias": "taqueria-la-familia-denver", "name": "Taqueria La Familia", "image_url":
+        "https://s3-media2.fl.yelpcdn.com/bphoto/VkLvsnLvRTKncPKmBqJxfQ/o.jpg", "is_closed":
+        false, "url": "https://www.yelp.com/biz/taqueria-la-familia-denver?adjust_creative=brR3_xcVublpFQ4Am1iO_g&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=brR3_xcVublpFQ4Am1iO_g",
+        "review_count": 457, "categories": [{"alias": "mexican", "title": "Mexican"}],
+        "rating": 4.5, "coordinates": {"latitude": 39.761887, "longitude": -105.020065},
+        "transactions": ["delivery"], "price": "$$", "location": {"address1": "2642
+        W 32nd Ave", "address2": "", "address3": "", "city": "Denver", "zip_code":
+        "80211", "country": "US", "state": "CO", "display_address": ["2642 W 32nd
+        Ave", "Denver, CO 80211"]}, "phone": "+13034332332", "display_phone": "(303)
+        433-2332", "distance": 5170.503059518083}, {"id": "WTe8uL6vF1ZuKAeJIvxR8w",
+        "alias": "la-loma-denver-denver", "name": "La Loma | Denver", "image_url":
+        "https://s3-media4.fl.yelpcdn.com/bphoto/pJngNB-vrN3Fn24nDns0jg/o.jpg", "is_closed":
+        false, "url": "https://www.yelp.com/biz/la-loma-denver-denver?adjust_creative=brR3_xcVublpFQ4Am1iO_g&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=brR3_xcVublpFQ4Am1iO_g",
+        "review_count": 1893, "categories": [{"alias": "mexican", "title": "Mexican"},
+        {"alias": "tex-mex", "title": "Tex-Mex"}], "rating": 4.0, "coordinates": {"latitude":
+        39.74493, "longitude": -104.98781}, "transactions": ["pickup", "delivery"],
+        "price": "$$", "location": {"address1": "1801 Broadway", "address2": "Unit
+        116", "address3": "", "city": "Denver", "zip_code": "80202", "country": "US",
+        "state": "CO", "display_address": ["1801 Broadway", "Unit 116", "Denver, CO
+        80202"]}, "phone": "+13034338300", "display_phone": "(303) 433-8300", "distance":
+        1831.6258707852928}, {"id": "msO9v3yrUbV5XFO1EnAz8w", "alias": "wild-taco-denver-denver",
+        "name": "Wild Taco Denver", "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/DzRYlui3GhTsA0-hZjq8iQ/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/wild-taco-denver-denver?adjust_creative=brR3_xcVublpFQ4Am1iO_g&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=brR3_xcVublpFQ4Am1iO_g",
+        "review_count": 104, "categories": [{"alias": "tacos", "title": "Tacos"}],
+        "rating": 4.5, "coordinates": {"latitude": 39.72742, "longitude": -104.98452},
+        "transactions": ["pickup", "delivery"], "price": "$$", "location": {"address1":
+        "215 E 7th Ave", "address2": "", "address3": null, "city": "Denver", "zip_code":
+        "80203", "country": "US", "state": "CO", "display_address": ["215 E 7th Ave",
+        "Denver, CO 80203"]}, "phone": "+13038567145", "display_phone": "(303) 856-7145",
+        "distance": 1518.0752612964236}, {"id": "OIQh2YtOXjlKfWPx-t8iFA", "alias":
+        "la-loteria-taqueria-denver", "name": "La Loteria Taqueria", "image_url":
+        "https://s3-media1.fl.yelpcdn.com/bphoto/CeiN-B5G5dzJ65o-LXFAZQ/o.jpg", "is_closed":
+        false, "url": "https://www.yelp.com/biz/la-loteria-taqueria-denver?adjust_creative=brR3_xcVublpFQ4Am1iO_g&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=brR3_xcVublpFQ4Am1iO_g",
+        "review_count": 265, "categories": [{"alias": "mexican", "title": "Mexican"}],
+        "rating": 4.5, "coordinates": {"latitude": 39.7158, "longitude": -104.9873},
+        "transactions": ["pickup"], "price": "$$", "location": {"address1": "42 S
+        Broadway", "address2": "", "address3": null, "city": "Denver", "zip_code":
+        "80209", "country": "US", "state": "CO", "display_address": ["42 S Broadway",
+        "Denver, CO 80209"]}, "phone": "+17203899055", "display_phone": "(720) 389-9055",
+        "distance": 2632.0975240231223}, {"id": "talElTT6P0jNvYrcxtBjTA", "alias":
+        "los-chingones-denver-denver-2", "name": "Los Chingones Denver", "image_url":
+        "https://s3-media3.fl.yelpcdn.com/bphoto/bITAfSyacA1FdvENnpg6uA/o.jpg", "is_closed":
+        false, "url": "https://www.yelp.com/biz/los-chingones-denver-denver-2?adjust_creative=brR3_xcVublpFQ4Am1iO_g&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=brR3_xcVublpFQ4Am1iO_g",
+        "review_count": 1019, "categories": [{"alias": "mexican", "title": "Mexican"}],
+        "rating": 4.0, "coordinates": {"latitude": 39.75756, "longitude": -104.98687},
+        "transactions": ["pickup", "delivery"], "price": "$$", "location": {"address1":
+        "2463 Larimer St", "address2": "", "address3": "", "city": "Denver", "zip_code":
+        "80205", "country": "US", "state": "CO", "display_address": ["2463 Larimer
+        St", "Denver, CO 80205"]}, "phone": "+13032950686", "display_phone": "(303)
+        295-0686", "distance": 2837.8921954579514}, {"id": "yXVJ_K6vdpM3PwfHfkyn5g",
+        "alias": "mister-oso-denver", "name": "Mister Oso", "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/twljj6_gSt4DOInCT7Hgsg/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/mister-oso-denver?adjust_creative=brR3_xcVublpFQ4Am1iO_g&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=brR3_xcVublpFQ4Am1iO_g",
+        "review_count": 336, "categories": [{"alias": "tacos", "title": "Tacos"},
+        {"alias": "cocktailbars", "title": "Cocktail Bars"}, {"alias": "latin", "title":
+        "Latin American"}], "rating": 4.0, "coordinates": {"latitude": 39.76424, "longitude":
+        -104.97848}, "transactions": ["pickup", "delivery"], "price": "$$", "location":
+        {"address1": "3163 Larimer St", "address2": "", "address3": null, "city":
+        "Denver", "zip_code": "80205", "country": "US", "state": "CO", "display_address":
+        ["3163 Larimer St", "Denver, CO 80205"]}, "phone": "+17206776454", "display_phone":
+        "(720) 677-6454", "distance": 3264.2883967777084}, {"id": "3LoMv9TtprQhH1AmN33ubA",
+        "alias": "guadalajara-mexican-restaurant-westminster", "name": "Guadalajara
+        Mexican Restaurant", "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/HGVlIqtCHnmrKIzSDiz0ug/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/guadalajara-mexican-restaurant-westminster?adjust_creative=brR3_xcVublpFQ4Am1iO_g&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=brR3_xcVublpFQ4Am1iO_g",
+        "review_count": 744, "categories": [{"alias": "mexican", "title": "Mexican"}],
+        "rating": 4.5, "coordinates": {"latitude": 39.82754, "longitude": -105.02161},
+        "transactions": ["pickup"], "price": "$$", "location": {"address1": "2835
+        W 72nd Ave", "address2": "", "address3": "", "city": "Westminster", "zip_code":
+        "80030", "country": "US", "state": "CO", "display_address": ["2835 W 72nd
+        Ave", "Westminster, CO 80030"]}, "phone": "+13034269540", "display_phone":
+        "(303) 426-9540", "distance": 11133.926098030644}, {"id": "xTSCydAPq8EGeOiUzS1LLA",
+        "alias": "d-corazon-denver-2", "name": "D''Corazon", "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/p6LFIvxDOsOKzmVUtqCQKA/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/d-corazon-denver-2?adjust_creative=brR3_xcVublpFQ4Am1iO_g&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=brR3_xcVublpFQ4Am1iO_g",
+        "review_count": 717, "categories": [{"alias": "mexican", "title": "Mexican"},
+        {"alias": "bars", "title": "Bars"}], "rating": 4.5, "coordinates": {"latitude":
+        39.7499084472656, "longitude": -104.999519348145}, "transactions": ["pickup"],
+        "price": "$$", "location": {"address1": "1530 Blake St", "address2": "Unit
+        C", "address3": "", "city": "Denver", "zip_code": "80202", "country": "US",
+        "state": "CO", "display_address": ["1530 Blake St", "Unit C", "Denver, CO
+        80202"]}, "phone": "+17209048226", "display_phone": "(720) 904-8226", "distance":
+        2971.4905064218256}, {"id": "_GHVchNwmuso9EzAn25ibg", "alias": "tacos-el-huequito-denver",
+        "name": "Tacos El Huequito", "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/V0Tndd45DKBPj98cJWm-Nw/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/tacos-el-huequito-denver?adjust_creative=brR3_xcVublpFQ4Am1iO_g&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=brR3_xcVublpFQ4Am1iO_g",
+        "review_count": 31, "categories": [{"alias": "foodtrucks", "title": "Food
+        Trucks"}, {"alias": "tacos", "title": "Tacos"}], "rating": 4.5, "coordinates":
+        {"latitude": 39.7842581, "longitude": -104.9621243}, "transactions": ["delivery"],
+        "location": {"address1": "2111 E 48th Ave", "address2": null, "address3":
+        null, "city": "Denver", "zip_code": "80216", "country": "US", "state": "CO",
+        "display_address": ["2111 E 48th Ave", "Denver, CO 80216"]}, "phone": "+13033621084",
+        "display_phone": "(303) 362-1084", "distance": 5463.237083057473}, {"id":
+        "7cHFgxf33rmfGavv4fOU1A", "alias": "dos-santos-denver-2", "name": "Dos Santos",
+        "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/XMWQcfzHoIhGiQISpRuspw/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/dos-santos-denver-2?adjust_creative=brR3_xcVublpFQ4Am1iO_g&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=brR3_xcVublpFQ4Am1iO_g",
+        "review_count": 612, "categories": [{"alias": "mexican", "title": "Mexican"},
+        {"alias": "bars", "title": "Bars"}, {"alias": "tex-mex", "title": "Tex-Mex"}],
+        "rating": 4.0, "coordinates": {"latitude": 39.74341, "longitude": -104.96919},
+        "transactions": ["delivery"], "price": "$$", "location": {"address1": "1475
+        E 17th Ave", "address2": "", "address3": "", "city": "Denver", "zip_code":
+        "80218", "country": "US", "state": "CO", "display_address": ["1475 E 17th
+        Ave", "Denver, CO 80218"]}, "phone": "+13033863509", "display_phone": "(303)
+        386-3509", "distance": 883.9208966025363}, {"id": "5-Y6ioHcfRy-eCBZtU6rHw",
+        "alias": "venalonzos-centennial-2", "name": "Venalonzo''s", "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/5ovmwsy7iraCJSGMeFGEpA/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/venalonzos-centennial-2?adjust_creative=brR3_xcVublpFQ4Am1iO_g&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=brR3_xcVublpFQ4Am1iO_g",
+        "review_count": 260, "categories": [{"alias": "tacos", "title": "Tacos"},
+        {"alias": "newmexican", "title": "New Mexican Cuisine"}], "rating": 5.0, "coordinates":
+        {"latitude": 39.5920055, "longitude": -104.8869153}, "transactions": [], "price":
+        "$", "location": {"address1": "6830 S Yosemite St", "address2": "", "address3":
+        null, "city": "Centennial", "zip_code": "80112", "country": "US", "state":
+        "CO", "display_address": ["6830 S Yosemite St", "Centennial, CO 80112"]},
+        "phone": "+17209236926", "display_phone": "(720) 923-6926", "distance": 17415.141562390898},
+        {"id": "MtlvL-SAU6_1gDiRY6MAgw", "alias": "la-calle-taqueria-y-carnitas-denver",
+        "name": "La Calle Taqueria Y Carnitas", "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/uTTjzYw3nLWGdUHSQrrs_A/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/la-calle-taqueria-y-carnitas-denver?adjust_creative=brR3_xcVublpFQ4Am1iO_g&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=brR3_xcVublpFQ4Am1iO_g",
+        "review_count": 378, "categories": [{"alias": "mexican", "title": "Mexican"}],
+        "rating": 4.5, "coordinates": {"latitude": 39.7114611, "longitude": -105.0102102},
+        "transactions": ["pickup", "delivery"], "price": "$$", "location": {"address1":
+        "1565 W Alameda Ave", "address2": "", "address3": "", "city": "Denver", "zip_code":
+        "80223", "country": "US", "state": "CO", "display_address": ["1565 W Alameda
+        Ave", "Denver, CO 80223"]}, "phone": "+17205836586", "display_phone": "(720)
+        583-6586", "distance": 4340.709859477461}, {"id": "OLUUYQuNGOesrAORuqWHgg",
+        "alias": "la-abeja-denver-2", "name": "La Abeja", "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/10cJwggyZ3KWfzTggvO2gA/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/la-abeja-denver-2?adjust_creative=brR3_xcVublpFQ4Am1iO_g&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=brR3_xcVublpFQ4Am1iO_g",
+        "review_count": 209, "categories": [{"alias": "mexican", "title": "Mexican"}],
+        "rating": 4.5, "coordinates": {"latitude": 39.7399, "longitude": -104.98079},
+        "transactions": ["pickup"], "price": "$", "location": {"address1": "508 E
+        Colfax Ave", "address2": "", "address3": "", "city": "Denver", "zip_code":
+        "80203", "country": "US", "state": "CO", "display_address": ["508 E Colfax
+        Ave", "Denver, CO 80203"]}, "phone": "+13038321911", "display_phone": "(303)
+        832-1911", "distance": 1024.0953833986748}, {"id": "9ZA3ixRK1v0pu_RCo-XGmw",
+        "alias": "tamayo-denver", "name": "Tamayo", "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/hfmw961Xp15K-MLoYLp7Zg/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/tamayo-denver?adjust_creative=brR3_xcVublpFQ4Am1iO_g&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=brR3_xcVublpFQ4Am1iO_g",
+        "review_count": 1229, "categories": [{"alias": "mexican", "title": "Mexican"}],
+        "rating": 4.0, "coordinates": {"latitude": 39.74733455329732, "longitude":
+        -104.99956317056962}, "transactions": ["pickup", "delivery"], "price": "$$",
+        "location": {"address1": "1400 Larimer St", "address2": "", "address3": "",
+        "city": "Denver", "zip_code": "80202", "country": "US", "state": "CO", "display_address":
+        ["1400 Larimer St", "Denver, CO 80202"]}, "phone": "+17209461433", "display_phone":
+        "(720) 946-1433", "distance": 2829.894293770122}, {"id": "I2dOQV2yqmSvmaYccC7zCQ",
+        "alias": "los-carboncitos-denver", "name": "Los Carboncitos", "image_url":
+        "https://s3-media3.fl.yelpcdn.com/bphoto/XhdWzeTf78lCI8VlsSpR7w/o.jpg", "is_closed":
+        false, "url": "https://www.yelp.com/biz/los-carboncitos-denver?adjust_creative=brR3_xcVublpFQ4Am1iO_g&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=brR3_xcVublpFQ4Am1iO_g",
+        "review_count": 398, "categories": [{"alias": "mexican", "title": "Mexican"}],
+        "rating": 4.0, "coordinates": {"latitude": 39.76914, "longitude": -105.00665},
+        "transactions": ["pickup", "delivery"], "price": "$", "location": {"address1":
+        "3757 Pecos St", "address2": "", "address3": "", "city": "Denver", "zip_code":
+        "80211", "country": "US", "state": "CO", "display_address": ["3757 Pecos St",
+        "Denver, CO 80211"]}, "phone": "+13034580880", "display_phone": "(303) 458-0880",
+        "distance": 4862.647878050695}, {"id": "cibmn50gyhmw29fg7kzPhQ", "alias":
+        "tarascos-denver", "name": "Tarasco''s", "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/3sqWCUD1q8DDstPH4PyaHQ/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/tarascos-denver?adjust_creative=brR3_xcVublpFQ4Am1iO_g&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=brR3_xcVublpFQ4Am1iO_g",
+        "review_count": 410, "categories": [{"alias": "mexican", "title": "Mexican"},
+        {"alias": "vegetarian", "title": "Vegetarian"}], "rating": 4.5, "coordinates":
+        {"latitude": 39.70801, "longitude": -105.02469}, "transactions": ["delivery"],
+        "price": "$$", "location": {"address1": "470 S Federal Blvd", "address2":
+        "", "address3": "", "city": "Denver", "zip_code": "80219", "country": "US",
+        "state": "CO", "display_address": ["470 S Federal Blvd", "Denver, CO 80219"]},
+        "phone": "+13039222387", "display_phone": "(303) 922-2387", "distance": 5565.86534952542},
+        {"id": "gJy0YJF84VkKVg3-80K9MQ", "alias": "chakas-mexican-restaurant-denver",
+        "name": "Chakas Mexican Restaurant", "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/hICjVmMYxONh8aa33sLOyw/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/chakas-mexican-restaurant-denver?adjust_creative=brR3_xcVublpFQ4Am1iO_g&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=brR3_xcVublpFQ4Am1iO_g",
+        "review_count": 505, "categories": [{"alias": "mexican", "title": "Mexican"}],
+        "rating": 4.5, "coordinates": {"latitude": 39.678821172428705, "longitude":
+        -104.91540976041152}, "transactions": ["delivery"], "price": "$$", "location":
+        {"address1": "6265 E Evans Ave", "address2": null, "address3": "", "city":
+        "Denver", "zip_code": "80222", "country": "US", "state": "CO", "display_address":
+        ["6265 E Evans Ave", "Denver, CO 80222"]}, "phone": "+13039938105", "display_phone":
+        "(303) 993-8105", "distance": 7858.650061003673}, {"id": "6Wnfp6qjvcPTbl8gYQqZzw",
+        "alias": "la-pasadita-inn-denver", "name": "La Pasadita Inn", "image_url":
+        "https://s3-media3.fl.yelpcdn.com/bphoto/7xXxm7zxkjzAUQmyOlogug/o.jpg", "is_closed":
+        false, "url": "https://www.yelp.com/biz/la-pasadita-inn-denver?adjust_creative=brR3_xcVublpFQ4Am1iO_g&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=brR3_xcVublpFQ4Am1iO_g",
+        "review_count": 283, "categories": [{"alias": "mexican", "title": "Mexican"}],
+        "rating": 4.5, "coordinates": {"latitude": 39.747356, "longitude": -104.977718},
+        "transactions": ["delivery"], "price": "$$", "location": {"address1": "1959
+        Park Ave", "address2": "Unit A", "address3": "", "city": "Denver", "zip_code":
+        "80218", "country": "US", "state": "CO", "display_address": ["1959 Park Ave",
+        "Unit A", "Denver, CO 80218"]}, "phone": "+13038321785", "display_phone":
+        "(303) 832-1785", "distance": 1462.571479671973}, {"id": "afUB6FowiZZ1Mruqc3WXrQ",
+        "alias": "7-leguas-mexican-grille-denver-3", "name": "7 Leguas Mexican Grille",
+        "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/nDq9DhH0znIfWjIq414OEw/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/7-leguas-mexican-grille-denver-3?adjust_creative=brR3_xcVublpFQ4Am1iO_g&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=brR3_xcVublpFQ4Am1iO_g",
+        "review_count": 316, "categories": [{"alias": "mexican", "title": "Mexican"}],
+        "rating": 4.0, "coordinates": {"latitude": 39.739974, "longitude": -104.934039},
+        "transactions": ["pickup", "delivery"], "price": "$$", "location": {"address1":
+        "4550 E Colfax Ave", "address2": "", "address3": "", "city": "Denver", "zip_code":
+        "80220", "country": "US", "state": "CO", "display_address": ["4550 E Colfax
+        Ave", "Denver, CO 80220"]}, "phone": "+13033224431", "display_phone": "(303)
+        322-4431", "distance": 3135.16665381278}], "total": 2100, "region": {"center":
+        {"longitude": -104.97024536132812, "latitude": 39.73552421220229}}}'
+  recorded_at: Mon, 15 Jan 2024 18:28:58 GMT
+recorded_with: VCR 6.2.0

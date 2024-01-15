@@ -3,7 +3,7 @@ require "rails_helper"
 RSpec.describe "Index", type: :request do
   describe "GET /api/v0/forecast", :vcr do
     context "When a valid location is used" do
-      it "should return the details the weather", :vcr do
+      it "should return the details for the weather", :vcr do
         get "/api/v0/forecast?location=houston,tx"
 
         expect(response).to be_successful
@@ -95,7 +95,7 @@ RSpec.describe "Index", type: :request do
       end
     end
     context "When a valid location is used" do
-      it "should return the details the weather", :vcr do
+      it "should return an error if location is empty", :vcr do
         get "/api/v0/forecast?location="
 
         response_data = JSON.parse(response.body, symbolize_names: true)
