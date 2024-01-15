@@ -278,7 +278,6 @@ PLATFORMS
 
 DEPENDENCIES
   bootsnap
-  capybara
   debug
   factory_bot_rails
   faker
