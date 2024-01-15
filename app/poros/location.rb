@@ -4,5 +4,6 @@ class Location
   def initialize(data)
     @lat = data[:lat]
     @lng = data[:lng]
+    
   end
 end
