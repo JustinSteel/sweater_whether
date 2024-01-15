@@ -3,6 +3,7 @@ class Api::V0::ForecastsController < ApplicationController
     begin
       @location = MapquestFacade.get_location(Forecast.location_present(params[:location]))
       @current = ForecastFacade.current(@location)
+      # require 'pry'; binding.pry
       @daily = ForecastFacade.daily(@location)
       @hourly = ForecastFacade.hourly(@location)
       

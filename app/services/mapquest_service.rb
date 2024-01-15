@@ -1,4 +1,4 @@
-class MapQuestService
+class MapquestService
 
   def self.get_coordinates(location)
     get_url("address?location=#{location}")

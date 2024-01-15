@@ -1,13 +1,17 @@
 class Hourly
   attr_reader :time,
               :temperature,
-              :conditions,
+              :condition,
               :icon
 
   def initialize(data)
-    @time = Time.at(data[:time]).strftime("%I:%M %p")
-    @temperature = data[:temp]
-    @conditions = data[:condition]
-    @icon = data[:icon]
+    @time = formated_time(data[:time])
+    @temperature = data[:temp_f]
+    @condition = data[:condition][:text]
+    @icon = data[:condition][:icon]
+  end
+
+  def formated_time(time)
+     time.slice(11..15)
   end
 end
