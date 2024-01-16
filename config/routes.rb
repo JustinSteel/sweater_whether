@@ -4,6 +4,7 @@ Rails.application.routes.draw do
       # resources :forecasts, only: [:index]
       get '/forecast', to: 'forecasts#index'
       resources :users, only: [:create]
+      post '/sessions', to: 'sessions#create'
     end
   end
 end

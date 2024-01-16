@@ -11,4 +11,3 @@ RSpec.describe User, type: :model do
     it { should_not allow_value('invalid_email').for(:email) }
   end
 end
-

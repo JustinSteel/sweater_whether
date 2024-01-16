@@ -1,37 +1,160 @@
-require 'rails_helper'
+require "rails_helper"
 
-describe "Users API", type: :request do
-  describe 'POST #create' do
-    let(:valid_params) do
-    {
-      email: 'randy@randy.com',
-      password: 'password',
-      password_confirmation: 'password'
-    }
-    end
-    let(:invalid_params) do
-      {
-      email: 'randy@randy.com',
-      password: 'password',
-      password_confirmation: 'password1'
-    }
-  end
+RSpec.describe "Create", type: :request do
+  describe "POST /api/v0/users", :vcr do
+    context "Sending information through the body" do
+      it "should create a user", :vcr do
+        headers = {"CONTENT_TYPE" => "application/json", "Accept" => "application/json"}
+        payload = {
+          email: "user@email.com",
+          password: "password",
+          password_confirmation: "password"
+        }
+        body = JSON.generate(payload)
 
-    describe 'happy path' do
-      it 'creates a new user' do
-        post '/api/v0/users', params: valid_params
+        post "/api/v0/users", headers: headers, params: body
+
         expect(response).to be_successful
-        expect(response.status).to eq(201)
-        expect(JSON.parse(response.body, symbolize_names: true)).to eq(UserSerializer.format_user(User.last))
+
+        response_data = JSON.parse(response.body, symbolize_names: true)
+
+        expect(response_data[:data]).to have_key(:id)
+        expect(response_data[:data][:id]).to be_a(String)
+
+        expect(response_data[:data]).to have_key(:type)
+        expect(response_data[:data][:type]).to be_a(String)
+        expect(response_data[:data][:type]).to eq("users")
+
+        expect(response_data[:data]).to have_key(:attributes)
+        expect(response_data[:data][:attributes]).to be_a(Hash)
+
+        expect(response_data[:data][:attributes]).to have_key(:email)
+        expect(response_data[:data][:attributes][:email]).to be_a(String)
+        expect(response_data[:data][:attributes][:email]).to eq("user@email.com")
+
+        expect(response_data[:data][:attributes]).to have_key(:api_key)
+        expect(response_data[:data][:attributes][:api_key]).to be_a(String)
+
+        expect(response_data[:data][:attributes]).to_not have_key(:password)
+        expect(response_data[:data][:attributes]).to_not have_key(:password_confirmation)
       end
     end
 
-    describe 'sad path' do
-      it 'returns an error if passwords do not match' do
-        post '/api/v0/users', params: invalid_params
+    context "sad path" do
+      it "should not create a user if the user already exists", :vcr do
+        headers = {"CONTENT_TYPE" => "application/json", "Accept" => "application/json"}
+        payload = {
+          email: "user@email.com",
+          password: "password",
+          password_confirmation: "password"
+        }
+        body = JSON.generate(payload)
+
+        post "/api/v0/users", headers: headers, params: body
+
+        headers = {"CONTENT_TYPE" => "application/json", "Accept" => "application/json"}
+        payload = {
+          email: "user@email.com",
+          password: "password",
+          password_confirmation: "password"
+        }
+        body = JSON.generate(payload)
+
+        post "/api/v0/users", headers: headers, params: body
+
+        response_data = JSON.parse(response.body, symbolize_names: true)
+
         expect(response).to_not be_successful
-        expect(response.status).to eq(422)
-        expect(JSON.parse(response.body, symbolize_names: true)).to eq(ErrorSerializer.format_errors("Password confirmation doesn't match Password"))
+        expect(response).to have_http_status(409)
+
+        expect(response_data).to have_key(:errors)
+        expect(response_data[:errors].first).to have_key(:detail)
+
+        expect(response_data[:errors].first[:detail]).to eq("Validation failed: Email has already been taken")
+      end
+
+      it "should not create a user if the password does not match", :vcr do
+        headers = {"CONTENT_TYPE" => "application/json", "Accept" => "application/json"}
+        payload = {
+          email: "user1@email.com",
+          password: "password",
+          password_confirmation: "password123"
+        }
+        body = JSON.generate(payload)
+
+        post "/api/v0/users", headers: headers, params: body
+
+        response_data = JSON.parse(response.body, symbolize_names: true)
+
+        expect(response).to_not be_successful
+        expect(response).to have_http_status(404)
+
+        expect(response_data).to have_key(:errors)
+        expect(response_data[:errors].first).to have_key(:detail)
+        expect(response_data[:errors].first[:detail]).to eq("Passwords don't match, try again.")
+      end
+
+      it "should not create a user if email is empty", :vcr do
+        headers = {"CONTENT_TYPE" => "application/json", "Accept" => "application/json"}
+        payload = {
+          email: "",
+          password: "password",
+          password_confirmation: "password"
+        }
+        body = JSON.generate(payload)
+
+        post "/api/v0/users", headers: headers, params: body
+
+        response_data = JSON.parse(response.body, symbolize_names: true)
+
+        expect(response).to_not be_successful
+        expect(response).to have_http_status(409)
+
+        expect(response_data).to have_key(:errors)
+        expect(response_data[:errors].first).to have_key(:detail)
+        expect(response_data[:errors].first[:detail]).to eq("Validation failed: Email can't be blank, Email is invalid")
+      end
+
+      it "should not create a user if password is empty", :vcr do
+        headers = {"CONTENT_TYPE" => "application/json", "Accept" => "application/json"}
+        payload = {
+          email: "user2@email.com",
+          password: "",
+          password_confirmation: "password"
+        }
+        body = JSON.generate(payload)
+
+        post "/api/v0/users", headers: headers, params: body
+
+        response_data = JSON.parse(response.body, symbolize_names: true)
+
+        expect(response).to_not be_successful
+        expect(response).to have_http_status(404)
+
+        expect(response_data).to have_key(:errors)
+        expect(response_data[:errors].first).to have_key(:detail)
+        expect(response_data[:errors].first[:detail]).to eq("Password can't be blank")
+      end
+
+      it "should not create a user if password and confirmation are empty", :vcr do
+        headers = {"CONTENT_TYPE" => "application/json", "Accept" => "application/json"}
+        payload = {
+          email: "user3@email.com",
+          password: "",
+          password_confirmation: ""
+        }
+        body = JSON.generate(payload)
+
+        post "/api/v0/users", headers: headers, params: body
+
+        response_data = JSON.parse(response.body, symbolize_names: true)
+
+        expect(response).to_not be_successful
+        expect(response).to have_http_status(404)
+
+        expect(response_data).to have_key(:errors)
+        expect(response_data[:errors].first).to have_key(:detail)
+        expect(response_data[:errors].first[:detail]).to eq("Password can't be blank")
       end
     end
   end
