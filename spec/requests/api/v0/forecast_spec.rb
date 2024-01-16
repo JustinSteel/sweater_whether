@@ -5,7 +5,7 @@ RSpec.describe "Index", type: :request do
     context "When a valid location is used" do
       it "should return the details the weather", :vcr do
         get "/api/v0/forecast?location=houston,tx"
-require 'pry'; binding.pry
+
         expect(response).to be_successful
 
         response_data = JSON.parse(response.body, symbolize_names: true)
@@ -97,7 +97,7 @@ require 'pry'; binding.pry
     context "When a valid location is not used" do
       it "should return the an error", :vcr do
         get "/api/v0/forecast?location="
-        # require 'pry'; binding.pry
+
         response_data = JSON.parse(response.body, symbolize_names: true)
 
         expect(response).to_not be_successful

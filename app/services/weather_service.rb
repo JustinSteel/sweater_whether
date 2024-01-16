@@ -1,7 +1,4 @@
-
-
 class WeatherService
-
   def self.get_forecast(location)
     get_url("?q=#{location.lat}+#{location.lng}&days=5")
   end
