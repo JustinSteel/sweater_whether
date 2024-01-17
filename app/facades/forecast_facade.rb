@@ -24,4 +24,12 @@ class ForecastFacade
     end
     day[0]
   end
+
+  def self.get_arrival_forecast(location, hour)
+    json = WeatherService.get_arrival_forecast(location, hour)
+    day = json[:forecast][:forecastday].map do |data|
+      Hourly.new(data[:hour].first)
+    end
+    day.first
+  end
 end

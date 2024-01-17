@@ -23,6 +23,18 @@ RSpec.describe MapquestService do
         expect(location_data[:latLng]).to have_key(:lng)
         expect(location_data[:latLng][:lng]).to be_a(Float)
       end
+
+      it 'returns directions information after getting an address' do
+        origin = 'Denver,CO'
+        destination = 'Pueblo,CO'
+
+        response = MapquestService.get_directions(origin, destination)
+
+        expect(response).to be_a(Hash)
+        expect(response).to have_key(:route)
+        expect(response[:route]).to have_key(:formattedTime)
+        expect(response[:route][:formattedTime]).to be_a(String)
+      end
     end
   end
 end
