@@ -21,7 +21,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Wed, 17 Jan 2024 02:27:11 GMT
+      - Wed, 17 Jan 2024 02:41:12 GMT
       Content-Type:
       - application/json; charset=utf-8
       Content-Length:
@@ -31,17 +31,17 @@ http_interactions:
       X-Ratelimit-Limit-2628000:
       - '1000000000'
       X-Ratelimit-Remaining-2628000:
-      - '999999747'
+      - '999999737'
       Ratelimit-Limit:
       - '1000000000'
       Ratelimit-Remaining:
-      - '999999747'
+      - '999999737'
       Ratelimit-Reset:
-      - '113569'
+      - '112728'
       X-Powered-By:
       - MapQuest
       X-Request-Id:
-      - eb3b41e0-b4df-11ee-8f74-279efe20eaba
+      - e05cbf40-b4e1-11ee-a9e8-bd4e1abfb54b
       Access-Control-Allow-Origin:
       - "*"
       X-Transaction-Count:
@@ -52,7 +52,7 @@ http_interactions:
       encoding: ASCII-8BIT
       string: !binary |-
         eyJyb3V0ZSI6eyJyb3V0ZUVycm9yIjp7ImVycm9yQ29kZSI6MiwibWVzc2FnZSI6IiJ9fSwiaW5mbyI6eyJzdGF0dXNjb2RlIjo0MDIsImNvcHlyaWdodCI6eyJ0ZXh0IjoiwqkgMjAyNCBNYXBRdWVzdCwgSW5jLiIsImltYWdlVXJsIjoiaHR0cDovL2FwaS5tcWNkbi5jb20vcmVzL21xbG9nby5naWYiLCJpbWFnZUFsdFRleHQiOiLCqSAyMDI0IE1hcFF1ZXN0LCBJbmMuIn0sIm1lc3NhZ2VzIjpbIldlIGFyZSB1bmFibGUgdG8gcm91dGUgd2l0aCB0aGUgZ2l2ZW4gbG9jYXRpb25zLiJdfX0=
-  recorded_at: Wed, 17 Jan 2024 02:27:11 GMT
+  recorded_at: Wed, 17 Jan 2024 02:41:12 GMT
 - request:
     method: get
     uri: https://www.mapquestapi.com/geocoding/v1/address?location=tokyo,JP
@@ -74,7 +74,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Wed, 17 Jan 2024 02:27:11 GMT
+      - Wed, 17 Jan 2024 02:41:12 GMT
       Content-Type:
       - application/json; charset=utf-8
       Content-Length:
@@ -84,17 +84,17 @@ http_interactions:
       X-Ratelimit-Limit-2628000:
       - '1000000000'
       X-Ratelimit-Remaining-2628000:
-      - '999999746'
+      - '999999736'
       Ratelimit-Limit:
       - '1000000000'
       Ratelimit-Remaining:
-      - '999999746'
+      - '999999736'
       Ratelimit-Reset:
-      - '113569'
+      - '112728'
       X-Powered-By:
       - MapQuest
       X-Request-Id:
-      - eb618e90-b4df-11ee-a844-db888e23fefa
+      - e0886320-b4e1-11ee-a844-db888e23fefa
       Access-Control-Allow-Origin:
       - "*"
       Etag:
@@ -103,10 +103,10 @@ http_interactions:
       encoding: ASCII-8BIT
       string: !binary |-
         eyJpbmZvIjp7InN0YXR1c2NvZGUiOjAsImNvcHlyaWdodCI6eyJ0ZXh0IjoiwqkgMjAyNCBNYXBRdWVzdCwgSW5jLiIsImltYWdlVXJsIjoiaHR0cDovL2FwaS5tcWNkbi5jb20vcmVzL21xbG9nby5naWYiLCJpbWFnZUFsdFRleHQiOiLCqSAyMDI0IE1hcFF1ZXN0LCBJbmMuIn0sIm1lc3NhZ2VzIjpbXX0sIm9wdGlvbnMiOnsibWF4UmVzdWx0cyI6LTEsImlnbm9yZUxhdExuZ0lucHV0IjpmYWxzZX0sInJlc3VsdHMiOlt7InByb3ZpZGVkTG9jYXRpb24iOnsibG9jYXRpb24iOiJ0b2t5byxKUCJ9LCJsb2NhdGlvbnMiOlt7InN0cmVldCI6IiIsImFkbWluQXJlYTYiOiIiLCJhZG1pbkFyZWE2VHlwZSI6Ik5laWdoYm9yaG9vZCIsImFkbWluQXJlYTUiOiIiLCJhZG1pbkFyZWE1VHlwZSI6IkNpdHkiLCJhZG1pbkFyZWE0IjoiIiwiYWRtaW5BcmVhNFR5cGUiOiJDb3VudHkiLCJhZG1pbkFyZWEzIjoiIiwiYWRtaW5BcmVhM1R5cGUiOiJTdGF0ZSIsImFkbWluQXJlYTEiOiJKUCIsImFkbWluQXJlYTFUeXBlIjoiQ291bnRyeSIsInBvc3RhbENvZGUiOiIiLCJnZW9jb2RlUXVhbGl0eUNvZGUiOiJBM1hBWCIsImdlb2NvZGVRdWFsaXR5IjoiU1RBVEUiLCJkcmFnUG9pbnQiOmZhbHNlLCJzaWRlT2ZTdHJlZXQiOiJOIiwibGlua0lkIjoiMCIsInVua25vd25JbnB1dCI6IiIsInR5cGUiOiJzIiwibGF0TG5nIjp7ImxhdCI6MzUuNjkzOTMsImxuZyI6MTM5Ljc1MzcxfSwiZGlzcGxheUxhdExuZyI6eyJsYXQiOjM1LjY5MzkzLCJsbmciOjEzOS43NTM3MX0sIm1hcFVybCI6IiJ9XX1dfQ==
-  recorded_at: Wed, 17 Jan 2024 02:27:11 GMT
+  recorded_at: Wed, 17 Jan 2024 02:41:12 GMT
 - request:
     method: get
-    uri: http://api.weatherapi.com/v1/forecast.json?hour=19:27&q=35.69393%20139.75371
+    uri: http://api.weatherapi.com/v1/forecast.json?hour=19:41&q=35.69393%20139.75371
     body:
       encoding: US-ASCII
       string: ''
@@ -125,7 +125,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Wed, 17 Jan 2024 02:27:11 GMT
+      - Wed, 17 Jan 2024 02:41:12 GMT
       Content-Type:
       - application/json
       Transfer-Encoding:
@@ -135,7 +135,7 @@ http_interactions:
       Vary:
       - Accept-Encoding
       Server:
-      - BunnyCDN-IL1-718
+      - BunnyCDN-IL1-845
       Cdn-Pullzone:
       - '93447'
       Cdn-Uid:
@@ -151,7 +151,7 @@ http_interactions:
       X-Weatherapi-Qpm-Left:
       - '4999955'
       X-Varnish:
-      - '916653548'
+      - '924322829'
       Cdn-Proxyver:
       - '1.04'
       Cdn-Requestpullsuccess:
@@ -159,20 +159,20 @@ http_interactions:
       Cdn-Requestpullcode:
       - '200'
       Cdn-Cachedat:
-      - 01/17/2024 02:27:11
+      - 01/17/2024 02:41:12
       Cdn-Edgestorageid:
-      - '940'
+      - '845'
       Cdn-Status:
       - '200'
       Cdn-Requestid:
-      - 4c7958eb229cc603a2ab692faaa77fb7
+      - b9f93e62efaff128c9c5c83b1f66511d
       Cdn-Cache:
       - MISS
     body:
       encoding: ASCII-8BIT
-      string: '{"location":{"name":"Tokyo","region":"Tokyo","country":"Japan","lat":35.69,"lon":139.75,"tz_id":"Asia/Tokyo","localtime_epoch":1705458391,"localtime":"2024-01-17
-        11:26"},"current":{"last_updated_epoch":1705457700,"last_updated":"2024-01-17
-        11:15","temp_c":8.0,"temp_f":46.4,"is_day":1,"condition":{"text":"Sunny","icon":"//cdn.weatherapi.com/weather/64x64/day/113.png","code":1000},"wind_mph":3.8,"wind_kph":6.1,"wind_degree":330,"wind_dir":"NNW","pressure_mb":1027.0,"pressure_in":30.33,"precip_mm":0.0,"precip_in":0.0,"humidity":34,"cloud":0,"feelslike_c":6.6,"feelslike_f":43.9,"vis_km":10.0,"vis_miles":6.0,"uv":3.0,"gust_mph":6.4,"gust_kph":10.3},"forecast":{"forecastday":[{"date":"2024-01-17","date_epoch":1705449600,"day":{"maxtemp_c":9.5,"maxtemp_f":49.1,"mintemp_c":3.3,"mintemp_f":38.0,"avgtemp_c":6.7,"avgtemp_f":44.0,"maxwind_mph":11.4,"maxwind_kph":18.4,"totalprecip_mm":0.0,"totalprecip_in":0.0,"totalsnow_cm":0.0,"avgvis_km":10.0,"avgvis_miles":6.0,"avghumidity":37,"daily_will_it_rain":0,"daily_chance_of_rain":0,"daily_will_it_snow":0,"daily_chance_of_snow":0,"condition":{"text":"Sunny","icon":"//cdn.weatherapi.com/weather/64x64/day/113.png","code":1000},"uv":2.0},"astro":{"sunrise":"06:50
+      string: '{"location":{"name":"Tokyo","region":"Tokyo","country":"Japan","lat":35.69,"lon":139.75,"tz_id":"Asia/Tokyo","localtime_epoch":1705459232,"localtime":"2024-01-17
+        11:40"},"current":{"last_updated_epoch":1705458600,"last_updated":"2024-01-17
+        11:30","temp_c":8.0,"temp_f":46.4,"is_day":1,"condition":{"text":"Sunny","icon":"//cdn.weatherapi.com/weather/64x64/day/113.png","code":1000},"wind_mph":3.8,"wind_kph":6.1,"wind_degree":330,"wind_dir":"NNW","pressure_mb":1027.0,"pressure_in":30.33,"precip_mm":0.0,"precip_in":0.0,"humidity":34,"cloud":0,"feelslike_c":6.6,"feelslike_f":43.9,"vis_km":10.0,"vis_miles":6.0,"uv":3.0,"gust_mph":6.4,"gust_kph":10.3},"forecast":{"forecastday":[{"date":"2024-01-17","date_epoch":1705449600,"day":{"maxtemp_c":9.5,"maxtemp_f":49.1,"mintemp_c":3.3,"mintemp_f":38.0,"avgtemp_c":6.7,"avgtemp_f":44.0,"maxwind_mph":11.4,"maxwind_kph":18.4,"totalprecip_mm":0.0,"totalprecip_in":0.0,"totalsnow_cm":0.0,"avgvis_km":10.0,"avgvis_miles":6.0,"avghumidity":37,"daily_will_it_rain":0,"daily_chance_of_rain":0,"daily_will_it_snow":0,"daily_chance_of_snow":0,"condition":{"text":"Sunny","icon":"//cdn.weatherapi.com/weather/64x64/day/113.png","code":1000},"uv":2.0},"astro":{"sunrise":"06:50
         AM","sunset":"04:52 PM","moonrise":"10:31 AM","moonset":"11:30 PM","moon_phase":"Waxing
         Crescent","moon_illumination":37,"is_moon_up":0,"is_sun_up":1},"hour":[{"time_epoch":1705417200,"time":"2024-01-17
         00:00","temp_c":5.5,"temp_f":41.8,"is_day":0,"condition":{"text":"Clear","icon":"//cdn.weatherapi.com/weather/64x64/night/113.png","code":1000},"wind_mph":4.3,"wind_kph":6.8,"wind_degree":352,"wind_dir":"N","pressure_mb":1025.0,"pressure_in":30.28,"precip_mm":0.0,"precip_in":0.0,"snow_cm":0.0,"humidity":27,"cloud":0,"feelslike_c":4.0,"feelslike_f":39.2,"windchill_c":4.0,"windchill_f":39.2,"heatindex_c":5.5,"heatindex_f":41.8,"dewpoint_c":-11.8,"dewpoint_f":10.8,"will_it_rain":0,"chance_of_rain":0,"will_it_snow":0,"chance_of_snow":0,"vis_km":10.0,"vis_miles":6.0,"gust_mph":6.7,"gust_kph":10.8,"uv":1.0,"short_rad":0.0,"diff_rad":0.0},{"time_epoch":1705420800,"time":"2024-01-17
@@ -199,5 +199,5 @@ http_interactions:
         21:00","temp_c":8.5,"temp_f":47.3,"is_day":0,"condition":{"text":"Clear","icon":"//cdn.weatherapi.com/weather/64x64/night/113.png","code":1000},"wind_mph":2.5,"wind_kph":4.0,"wind_degree":327,"wind_dir":"NNW","pressure_mb":1025.0,"pressure_in":30.26,"precip_mm":0.0,"precip_in":0.0,"snow_cm":0.0,"humidity":40,"cloud":20,"feelslike_c":8.4,"feelslike_f":47.2,"windchill_c":8.4,"windchill_f":47.2,"heatindex_c":8.5,"heatindex_f":47.3,"dewpoint_c":-4.4,"dewpoint_f":24.2,"will_it_rain":0,"chance_of_rain":0,"will_it_snow":0,"chance_of_snow":0,"vis_km":10.0,"vis_miles":6.0,"gust_mph":3.9,"gust_kph":6.3,"uv":1.0,"short_rad":38.5,"diff_rad":10.51},{"time_epoch":1705496400,"time":"2024-01-17
         22:00","temp_c":8.3,"temp_f":46.9,"is_day":0,"condition":{"text":"Partly cloudy","icon":"//cdn.weatherapi.com/weather/64x64/night/116.png","code":1003},"wind_mph":3.8,"wind_kph":6.1,"wind_degree":339,"wind_dir":"NNW","pressure_mb":1024.0,"pressure_in":30.24,"precip_mm":0.0,"precip_in":0.0,"snow_cm":0.0,"humidity":38,"cloud":53,"feelslike_c":7.5,"feelslike_f":45.4,"windchill_c":7.5,"windchill_f":45.4,"heatindex_c":8.3,"heatindex_f":46.9,"dewpoint_c":-5.0,"dewpoint_f":23.0,"will_it_rain":0,"chance_of_rain":0,"will_it_snow":0,"chance_of_snow":0,"vis_km":10.0,"vis_miles":6.0,"gust_mph":6.1,"gust_kph":9.8,"uv":1.0,"short_rad":19.25,"diff_rad":5.26},{"time_epoch":1705500000,"time":"2024-01-17
         23:00","temp_c":8.0,"temp_f":46.4,"is_day":0,"condition":{"text":"Overcast","icon":"//cdn.weatherapi.com/weather/64x64/night/122.png","code":1009},"wind_mph":5.4,"wind_kph":8.6,"wind_degree":341,"wind_dir":"NNW","pressure_mb":1024.0,"pressure_in":30.24,"precip_mm":0.0,"precip_in":0.0,"snow_cm":0.0,"humidity":36,"cloud":98,"feelslike_c":6.5,"feelslike_f":43.7,"windchill_c":6.5,"windchill_f":43.7,"heatindex_c":8.0,"heatindex_f":46.4,"dewpoint_c":-6.0,"dewpoint_f":21.2,"will_it_rain":0,"chance_of_rain":0,"will_it_snow":0,"chance_of_snow":0,"vis_km":10.0,"vis_miles":6.0,"gust_mph":8.5,"gust_kph":13.7,"uv":1.0,"short_rad":9.62,"diff_rad":2.63}]}]}}'
-  recorded_at: Wed, 17 Jan 2024 02:27:11 GMT
+  recorded_at: Wed, 17 Jan 2024 02:41:12 GMT
 recorded_with: VCR 6.2.0
