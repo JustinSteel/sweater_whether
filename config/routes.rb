@@ -5,6 +5,7 @@ Rails.application.routes.draw do
       get '/forecast', to: 'forecasts#index'
       resources :users, only: [:create]
       post '/sessions', to: 'sessions#create'
+      post '/road_trip', to: 'road_trips#create'
     end
   end
 end

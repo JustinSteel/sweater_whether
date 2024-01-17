@@ -43,6 +43,21 @@ RSpec.describe WeatherService do
         expect(weather[:forecast][:forecastday].first).to have_key(:hour)
         expect(weather[:forecast][:forecastday].first[:hour]).to be_a(Array)
       end
+
+      it 'returns forecast for given location and hour' do
+        location = double('Location', lat: 39.7392, lng: -104.9903)
+        hour = 15
+      
+        response = WeatherService.get_arrival_forecast(location, hour)
+      
+        expect(response).to be_a(Hash)
+        expect(response).to have_key(:current)
+        expect(response[:current]).to be_a(Hash)
+        expect(response[:current]).to have_key(:cloud)
+        expect(response[:current]).to have_key(:condition)
+        expect(response[:current][:condition]).to have_key(:code)
+        expect(response[:current][:condition]).to have_key(:icon)
+      end
     end    
   end
 end

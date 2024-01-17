@@ -1,5 +1,5 @@
 class UserSerializer
-  include JSONAPI::Serializer
+
   def self.format_user(user)
     {
       data: {

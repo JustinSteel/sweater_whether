@@ -78,7 +78,7 @@ RSpec.describe "Create", type: :request do
         payload = {
           email: "user1@email.com",
           password: "password",
-          password_confirmation: "password123"
+          password_confirmation: "password1"
         }
         body = JSON.generate(payload)
 

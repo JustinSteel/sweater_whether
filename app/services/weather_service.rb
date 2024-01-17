@@ -2,6 +2,10 @@ class WeatherService
   def self.get_forecast(location)
     get_url("?q=#{location.lat}+#{location.lng}&days=5")
   end
+  
+  def self.get_arrival_forecast(location, hour)
+    get_url("?q=#{location.lat}+#{location.lng}&hour=#{hour}")
+  end
 
   def self.get_url(url)
     response = conn.get(url)
