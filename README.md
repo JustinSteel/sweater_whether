@@ -1,24 +1,28 @@
-# README
+## Sweater Weather
+  - This app will find the forecast at any location you desire and if you wanna travel there by car we got you. We will be able to let you know how long the trip will take and what the weather will be like when you are going to arrive!
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+  ## Setup
 
-Things you may want to cover:
+  - First run bundle install
+  - Second run rails db:{drop,create,migrate}
+  - Third go to the supposed front end and use the following codes
 
-* Ruby version
+  ## Endpoints
 
-* System dependencies
+  **Forecast for a Location**
 
-* Configuration
+  - GET `http://localhost:3000/api/v0/forecast?location=<"YOUR LOCATION">`
 
-* Database creation
+  **Make a User**
 
-* Database initialization
+  - POST `http://localhost:3000/api/v0/users`
 
-* How to run the test suite
+  **Make a Session**
 
-* Services (job queues, cache servers, search engines, etc.)
+  - POST `http://localhost:3000/api/v0/sessions`
 
-* Deployment instructions
+  **Make a Roadtrip**
 
-* ...
+  - POST `http://localhost:3000/api/v0/road_trip`
+
+# THE END
