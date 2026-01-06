@@ -1,6 +1,5 @@
 class ForecastFacade
 
-
   def self.current(location)
     # require 'pry'; binding.pry
     json = WeatherService.get_forecast(location)
