@@ -24,5 +24,3 @@
   **Make a Roadtrip**
 
   - POST `http://localhost:3000/api/v0/road_trip`
-
-# THE END
